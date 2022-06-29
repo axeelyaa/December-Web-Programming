@@ -1,0 +1,437 @@
+/* Max-Width 320px */
+@media screen and (max-width: 320px) {
+  nav {
+    position: fixed;
+  }
+
+  .header__nav__list {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    transition: 0.3s;
+    z-index: 10000;
+
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .header__nav__list li a::before {
+    display: none;
+  }
+
+  .header__nav__list.active {
+    left: 0;
+    top: 0;
+  }
+
+  .header__nav__hamburger {
+    display: block;
+    position: fixed;
+    top: 2rem;
+    right: 2.5rem;
+
+    z-index: 100000;
+  }
+
+  .header__nav__hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header__nav__hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .header__nav__hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .bar {
+    background-color: white;
+  }
+
+  .header__hero h1 {
+    font-size: 1rem;
+  }
+
+  .main__content {
+    width: 65%;
+  }
+
+  .main__content__intro {
+    gap: 2rem;
+  }
+
+  .main__content__intro h1 {
+    font-size: 1rem;
+  }
+
+  .main__content__intro h3 {
+    font-size: 0.75rem;
+    width: 75%;
+    text-align: center;
+  }
+
+  aside {
+    gap: 1.5rem;
+    width: 35%;
+  }
+
+  aside img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  aside h4 {
+    font-size: 0.65rem;
+  }
+
+  .main__content__projects {
+    height: 100vh;
+    width: 154%;
+  }
+
+  .main__content__projects__flex {
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  .projects_title {
+    font-size: 1rem;
+  }
+
+  .card a img {
+    width: 125px;
+    height: 75px;
+  }
+
+  .card a::before {
+    opacity: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    font-size: 1rem;
+  }
+
+  .main__content__contact {
+    width: 154%;
+    gap: 4rem;
+  }
+
+  .main__content__contact h1 {
+    padding-top: 25px;
+  }
+
+  .main__content__contact__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__content__contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .fa-brands {
+    font-size: 3rem;
+    margin: 2rem 2rem;
+  }
+
+  .fa-brands:hover,
+  .fa-brands:active {
+    color: #dddddd;
+  }
+
+  footer a:hover {
+    color: #dddddd;
+  }
+}
+
+/* Max-Width 425px */
+@media screen and (max-width: 425px) and (min-width: 375px) {
+  nav {
+    position: fixed;
+  }
+
+  .header__nav__list {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    transition: 0.3s;
+    z-index: 10000;
+
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .header__nav__list li a::before {
+    display: none;
+  }
+
+  .header__nav__list.active {
+    left: 0;
+    top: 0;
+  }
+
+  .header__nav__hamburger {
+    display: block;
+    position: fixed;
+    top: 2rem;
+    right: 2.5rem;
+
+    z-index: 100000;
+  }
+
+  .header__nav__hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header__nav__hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .header__nav__hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .bar {
+    background-color: white;
+  }
+
+  .header__hero h1 {
+    font-size: 1rem;
+  }
+
+  .main__content {
+    width: 65%;
+  }
+
+  .main__content__intro {
+    gap: 2rem;
+  }
+
+  .main__content__intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .main__content__intro h3 {
+    font-size: 1rem;
+    width: 75%;
+    text-align: center;
+  }
+
+  aside {
+    gap: 1.5rem;
+    width: 35%;
+  }
+
+  aside img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  aside h4 {
+    font-size: 0.75rem;
+  }
+
+  .main__content__projects {
+    height: 100vh;
+    width: 154%;
+  }
+
+  .main__content__projects__flex {
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  .card a img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .card a::before {
+    opacity: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    font-size: 1rem;
+  }
+
+  .main__content__contact {
+    width: 154%;
+  }
+
+  .main__content__contact__group {
+    gap: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__content__contact h1 {
+    font-size: 2rem;
+  }
+
+  .fa-brands {
+    font-size: 3rem;
+    margin: 2rem 2rem;
+  }
+
+  .fa-brands:hover,
+  .fa-brands:active {
+    color: #dddddd;
+  }
+
+  footer a:hover {
+    color: #dddddd;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  nav {
+    position: fixed;
+  }
+
+  .header__nav__list {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    transition: 0.3s;
+    z-index: 10000;
+
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .header__nav__list li a::before {
+    display: none;
+  }
+
+  .header__nav__list.active {
+    left: 0;
+    top: 0;
+  }
+
+  .header__nav__hamburger {
+    display: block;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+
+    z-index: 100000;
+  }
+
+  .header__nav__hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header__nav__hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .header__nav__hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .bar {
+    background-color: white;
+  }
+
+  .header__hero h1 {
+    font-size: 1rem;
+  }
+
+  .main__content__intro {
+    gap: 2rem;
+  }
+
+  .main__content__intro h1 {
+    font-size: 1rem;
+  }
+
+  .main__content__intro h3 {
+    font-size: 0.75rem;
+  }
+
+  aside {
+    gap: 1.5rem;
+  }
+
+  aside img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  aside h4 {
+    font-size: 0.75rem;
+  }
+
+  .main__content__projects__flex {
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+
+  .card a img {
+    width: 200px;
+    height: 125px;
+  }
+
+  .card a::before {
+    opacity: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    font-size: 1.25rem;
+  }
+
+  .main__content__contact h1 {
+    font-size: 2rem;
+  }
+
+  .fa-brands {
+    font-size: 4rem;
+    margin: 0 2rem;
+  }
+
+  .fa-brands:hover,
+  .fa-brands:active {
+    color: #dddddd;
+  }
+
+  footer a:hover {
+    color: #dddddd;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  aside img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .main__content__projects {
+    height: 150vh;
+    width: 133.3%;
+    background-color: #4a3f35;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .main__content__contact h1 {
+    font-size: 2rem;
+  }
+
+  .fa-brands {
+    font-size: 3.5rem;
+  }
+}
