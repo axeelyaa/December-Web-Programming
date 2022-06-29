@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  opacity: 0;
+  transition: 1.5s opacity ease;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav__list {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 75px;
+  width: 100%;
+  align-items: center;
+}
+
+.header__nav__list li a {
+  color: #f0ebe3;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.header__nav__list li a::before {
+  position: absolute;
+  content: "";
+
+  background-color: #f0ebe3;
+  height: 5px;
+  bottom: -10px;
+  width: 0%;
+
+  transition: 0.4s width ease;
+}
+
+.header__nav__list li a:hover::before {
+  width: 100%;
+}
+
+.header__nav__hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.header__hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 46, 46, 0.7),
+      rgba(15, 15, 17, 0.7)
+    ),
+    url(images/bg-img.jpg);
+  background-size: cover;
+  background-repeat: none;
+
+  height: 100vh;
+
+  color: bisque;
+}
+
+.header__hero h1 {
+  line-height: 100vh;
+  text-align: center;
+}
+
+main {
+  display: flex;
+}
+
+.main__content {
+  width: 75%;
+}
+
+.main__content__intro {
+  height: 100vh;
+  background-color: #423f3e;
+  font-family: "Lato", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.main__content__intro h1,
+.main__content__intro h3,
+.main__content__intro a {
+  color: #dddddd;
+}
+
+.main__content__intro a {
+  text-decoration: underline;
+
+  transition: color 0.3s ease;
+}
+
+.main__content__intro a:hover,
+.main__content__intro a:active {
+  color: #a4b494;
+}
+
+.main__content__projects {
+  height: 100vh;
+  width: 133.3%;
+  background-color: #4a3f35;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__content__projects__flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+.projects_title {
+  padding-bottom: 25px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #dddddd;
+}
+
+.card {
+  position: relative;
+
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.card a img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 250ms ease-in-out;
+}
+
+.card a::before {
+  content: "Click to check the projects!";
+
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: absolute;
+  bottom: 0;
+
+  transition: 250ms ease-in-out;
+
+  color: white;
+}
+
+.card a:hover::before {
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+}
+
+.main__content__contact {
+  height: 100vh;
+  width: 133.3%;
+  background-color: #39311d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+.main__content__contact h1 {
+  font-family: "Lato", sans-serif;
+  color: #dddddd;
+  font-size: 3rem;
+}
+
+.fa-brands {
+  font-size: 5rem;
+  color: #dddddd;
+  margin: 0 4rem;
+  transition: 0.3s color ease;
+}
+
+.fa-brands:hover,
+.fa-brands:active {
+  color: black;
+}
+
+aside {
+  background-color: #444444;
+  height: 100vh;
+  width: 25%;
+
+  font-family: "Lato", sans-serif;
+  color: #dddddd;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+aside img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+aside h4 {
+  font-size: 1rem;
+}
+
+footer {
+  height: 15vh;
+  background-color: #2f2519;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  font-weight: 700;
+}
+
+footer p,
+footer a {
+  color: #dddddd;
+}
+
+footer a {
+  text-decoration: underline;
+  transition: 0.3s color ease;
+}
+
+footer a:hover {
+  color: green;
+}
